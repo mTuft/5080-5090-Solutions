@@ -1,10 +1,20 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
 
-\begin{document}
+All math should go into a math environment. $X+1=Y$ There are two types of math enviornments. Single dollar sign and double dollar sign. $$X+1=Y$$ Another thing to keep in mind, there are no spaces. $$hello everyone how are you?$ If you want to start a new paragraph, use a double backslash\\
+This should be a new paragraph.\\
+Now to go through some common commands used in 5080. All commands begin with a backslash.\\
+To create a fraction $\frac{1}{X}$\\
+To create a subscript: $F_{x,y}$\\
+To integrate with bounds $\int_{x}^{1}f(x,y)dx$\\
+To specify a distribution: $Y \sim DE(\theta ,0)$
+To write a branched function: $$f(x:\theta, \eta)= \begin{cases} \frac{1}{2\theta} e^{x-\theta} \qquad 0>x \\
+0 \qquad otherwise \end{cases}$$\\
 
-This is a test document.
+One other useful thing is an equation array.
+\begin{eqnarray*}
+f(x) &=& x+3y\\
+&=& x+3(x+2)\\
+&=& x+3x+6\\
+&=& 4x+6
+\end{eqnarray*}
 
 
-\end{document}
